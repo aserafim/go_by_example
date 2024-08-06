@@ -35,4 +35,14 @@ func main() {
 
 	}
 
+	for i := 0; i < 10; i++ {
+		fmt.Println(i + 1)
+	}
+
+	mapa := map[int]string{1: "Alefe", 2: "Natália", 3: "Carlinhos"}
+
+	for key, value := range mapa {
+		fmt.Printf("%d: - %s\n", key, value)
+	}
+
 }
