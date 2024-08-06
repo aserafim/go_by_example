@@ -45,4 +45,16 @@ func main() {
 		fmt.Printf("%d: - %s\n", key, value)
 	}
 
+	var mapa2 = make(map[int]string)
+	mapa2[1] = "Teste"
+
+	delete(mapa, 1)
+
+	for key, value := range mapa {
+		fmt.Printf("%d: - %s\n", key, value)
+	}
+
+	val1, ok1 := mapa[2]
+	fmt.Println(val1, ok1)
+
 }
